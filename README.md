@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nuxt 3 Starter
 
-## Getting Started
+We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
-First, run the development server:
+## Preview
+![image](https://user-images.githubusercontent.com/38668796/179501879-b1efa419-8419-4c27-a79e-d185cb2884b7.png)
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/productdevbook/nuxt3-app)
+
+## Deploy your own
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/productdevbook/nuxt3-app)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/productdevbook/nuxt3-app)
+
+This starter template also includes:
+
+- [Tailwind CSS v3](https://github.com/tailwindlabs/tailwindcss)
+- [Eslint](https://eslint.org)
+- [Headless UI](https://headlessui.dev/vue/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
+- [Icones](https://github.com/antfu/icones) - beautiful hand-crafted SVG icons with [Unocss](https://github.com/unocss/unocss) used. 
+
+First-party plugins needed for Tailwind UI:
+
+- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
+- [tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
+- [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
+- [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+
+
+Best Nuxt with Plugins:
+- [Pinia](https://github.com/posva/pinia)
+
+## Setup
+
+Make sure to install the dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server on http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev
+```
 
-## Learn More
+## Production
 
-To learn more about Next.js, take a look at the following resources:
+Build the application for production:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm start
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
