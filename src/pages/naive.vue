@@ -21,8 +21,8 @@ onUnmounted(() => {
         <div class="mb-10 flex items-center justify-between">
           <a target="_blank" href="https://productdevbook.com">productdevbook.com</a>
           <div class="flex space-x-2">
-            <TemLanguageChange />
-            <TemColorChange />
+            <TemLanguage />
+            <TemTheme />
           </div>
         </div>
         <div class="grid grid-cols-1 gap-6">

@@ -15,28 +15,26 @@ const lists = computed<ILink[]>(() => [
 
 <template>
   <div class="flex h-screen">
-    <div class="flex-none w-64 h-full overflow-y-auto bg-gray-100">
+    <div class="flex-none w-64 h-full overflow-y-auto">
       <div class="p-4">
         <h2 class="text-lg font-bold">
           侧边栏
         </h2>
         <div class="mt-4 space-y-2">
-          <div v-for="i in 50" :key="i" class="p-2 bg-white rounded">
-            Item {{ i }}
-          </div>
+          <TemMenu />
         </div>
       </div>
     </div>
 
-    <div class="flex-1 h-full overflow-y-auto bg-white hide-scrollbar">
+    <div class="flex-1 h-full overflow-y-auto hide-scrollbar">
       <div class="mb-10 flex items-center justify-between">
         <div
           class="w-[140px] h-[80px] bg-no-repeat bg-center mt-4"
           :style="{ backgroundImage: `url(${logo})`, backgroundSize: 'auto 100%' }"
         />
         <div class="flex space-x-2">
-          <TemLanguageChange />
-          <TemColorChange />
+          <TemLanguage />
+          <TemTheme />
         </div>
       </div>
       <div class="flex flex-col">
